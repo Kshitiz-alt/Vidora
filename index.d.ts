@@ -3,3 +3,8 @@ declare interface SharedHeaderProps {
     title : string,
     userImg? : string
 }
+
+declare interface SearchParams {
+    params: Promise<Record< string ,string>>
+    searchParams: Promise<Record<string,string | undefined>>
+}
