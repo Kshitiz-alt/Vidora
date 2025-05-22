@@ -4,6 +4,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  ::-webkit-scrollbar{
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: burlywood;
+    border-radius: 50px;
+  }
 }
 
 @theme {
@@ -21,8 +32,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  
 }
-
 @layer base {
   *,
   html,
@@ -31,5 +42,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-geist-karla);
+    
   }
 }
