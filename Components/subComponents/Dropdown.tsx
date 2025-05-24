@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 const Dropdown = () => {
     const [open,setOpen] = useState(false)
     return (
-        <div className='absolute right-20 flex flex-col items-center gap-1 p-2 bg-white rounded-2xl hover:cursor-pointer max-sm:right-5 md:right-6' onClick={()=>setOpen(!open)}>
+        <div className='absolute z-10 right-20 flex flex-col items-center gap-1 p-2 bg-white rounded-2xl hover:cursor-pointer max-sm:right-5 md:right-6' onClick={()=>setOpen(!open)}>
             <div className='flex gap-2'>
 
             <Image src="/DropDown.svg" width={20} height={20} alt='DropdownImg' />

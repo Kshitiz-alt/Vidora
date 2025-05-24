@@ -1,6 +1,6 @@
-import Header from "@/Components/Header";
-import { dummyCards } from "@/Components/subVideoCard";
-import VideoCard from "@/Components/VideoCard";
+import Header from "../../Components/Header";
+import { dummyCards } from "../../Components/subVideoCard/index";
+import VideoCard from "../../Components/VideoCard";
 
 export default function Home() {
   return (

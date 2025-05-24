@@ -20,7 +20,9 @@ const Navbar = () => {
                         <Image className='rounded-full' src="https://placehold.co/30x30" priority={true} width={50} height={50} alt='Profile-Pic'/>
                     </button>
                     <button>
+                        <Link href="/sign-in">
                         <Image src="https://img.icons8.com/?size=100&id=Q1xkcFuVON39&format=png&color=000000" width={30} height={30} alt=''/>
+                        </Link>
                     </button>
                 </figure>
             )}

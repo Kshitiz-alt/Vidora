@@ -22,8 +22,8 @@ const VideoCard = ({
           <figure className='flex gap-2 font-Julius items-center'>
             <Image className='rounded-[10px]' src={userImg} width={40} height={40} alt=''/>
             <figcaption>
-              <h3 className='text-[13px]'>{username}</h3>
-              <p className='text-[12px]'>{visibility}</p>
+              <h3 className='text-[10px]'>{username}</h3>
+              <p className='text-[9px]'>{visibility}</p>
             </figcaption>
             <aside className='absolute right-2 flex justify-center items-center gap-1'>
               <Image src="/eye.svg" width={17} height={17} alt='views'/>
@@ -31,7 +31,7 @@ const VideoCard = ({
             </aside>
           </figure>
         </div>
-        <h2 className='text-2xl'>{title} - {" "} {createdAt.toLocaleDateString('en-US',{year:"numeric",month:"short",day:"numeric"})}</h2>
+        <h2 className='text-[16px]'>{title} - {" "} {createdAt.toLocaleDateString('en-US',{year:"numeric",month:"short",day:"numeric"})}</h2>
       </article>
       <button className='absolute top-3 right-3 bg-white p-0.5 rounded-full' onClick={()=>{}}>
         <Image src="/copy.svg" width={18} height={18} alt='copy'/>
@@ -40,7 +40,7 @@ const VideoCard = ({
         <Image src="/dots.svg" width={18} height={18} alt='dots'/>
       </button>
       {duration && (
-        <div className='absolute top-36 right-2 text-[20px] bg-black text-white p-1 rounded-[10px] max-sm:top-28.5'>
+        <div className='absolute top-36 right-2 text-[15px] bg-black text-white p-1 rounded-[10px] max-sm:top-28.5'>
           {Math.ceil(duration / 60)} min
         </div>
       )}
