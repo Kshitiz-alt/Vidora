@@ -1,4 +1,7 @@
+"use client"
 import Navbar from "@/Components/Navbar";
+import { AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 
 
@@ -8,12 +11,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const Pathname = usePathname()
   return (
-      <div>
-        <Navbar/>
-        {children}
-      </div>
+    
+      <AnimatePresence mode="wait">
+        <div key={Pathname}>
+
+          <Navbar />
+          {children}
+        </div>
+      </AnimatePresence>
 
     
+
+
   );
 }

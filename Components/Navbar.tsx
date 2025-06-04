@@ -10,7 +10,7 @@ const Navbar = () => {
     const router = useRouter()
     return (
         <nav className='h-20 flex justify-between items-center mx-5'>
-            <Link href="/">
+            <Link id='/' href="/">
 
                 <Image className='' src="/Logo.svg" priority={true} height={32} width={113} alt='Logo' />
             </Link>

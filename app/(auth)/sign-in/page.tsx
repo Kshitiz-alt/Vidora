@@ -7,6 +7,7 @@ import { authenClient } from '../../../libraries/auth-client';
 
 
 const page = () => {
+
   
 
 const SignIn = async() => {
@@ -25,11 +26,11 @@ const SignIn = async() => {
           <figure className='bg-white w-[70%] flex flex-col gap-4 justify-center items-center p-7 rounded-[20px]'>
             <Image src="/Logo.svg" priority={true} height={32} width={113} alt='Logo' />
             <p className='font-Julius text-[18px] text-center max-w-[70%] font-extrabold max-sm:text-[12px]'>Create and share your very first  <span className='text-blue-400'> Vidora video </span> in no time!</p>
-            <button onClick={SignIn} className='w-3/4  rounded-[10px] p-2 border-[0.5px] border-black shadow shadow-black hover:shadow-2xs duration-200 ease-in max-sm:w-[85%] max-sm:text-[12px] '>
-              <Link href="/" className='flex gap-2 justify-center items-center'>
+            <button onClick={SignIn} className='w-3/4 cursor-pointer rounded-[10px] p-2 border-[0.5px] border-black shadow shadow-black hover:shadow-2xs duration-200 ease-in max-sm:w-[85%] max-sm:text-[12px] '>
+              <figure className='flex gap-2 justify-center items-center'>
                 <Image src="/google.svg" width={15} height={15} alt='google' />
                 <p>Sign in with Google</p>
-              </Link>
+              </figure>
             </button>
           </figure>
         </div>

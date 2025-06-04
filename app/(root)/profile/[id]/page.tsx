@@ -1,6 +1,7 @@
 import Header from '@/Components/Header'
 import { dummyCards } from '@/Components/subVideoCard'
 import VideoCard from '@/Components/VideoCard'
+import { SearchParams, Visibility } from '@/index'
 import React from 'react'
 
 const page = async ({ params }: SearchParams) => {
@@ -15,7 +16,16 @@ const page = async ({ params }: SearchParams) => {
                     {
                         dummyCards.map((element) => (
                             <VideoCard key={element.id}
-                                {...element}
+                                id={element.id}
+                                title={element.title}
+                                thumbnail={element.thumbnail}
+                                createdAt={element.createdAt}
+                                username={element.username}
+                                userImg={element.userImg}
+                                views={element.views}
+                                visibility={element.visibility as Visibility}
+                                duration={element.duration}
+
 
                             />
 

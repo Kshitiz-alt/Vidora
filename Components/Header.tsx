@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Dropdown from './subComponents/Dropdown'
+import { SharedHeaderProps } from '..'
 
 
 
@@ -28,7 +29,7 @@ const Header = ({ subHeader, title, userImg }: SharedHeaderProps) => {
                             <span className='max-sm:hidden'>a video</span>
                         </h1>
                     </Link>
-                    <Link href="/upload" className='flex gap-2 bg-black text-white p-4 rounded-4xl'>
+                    <Link href="/record" className='flex gap-2 bg-black text-white p-4 rounded-4xl'>
                         <Image src="/video.svg" width={17} height={17} alt='Video-Icon' />
                         <h1 className='text-[10px] font-semibold flex gap-1 font-Julius'>
                             <p>Record</p>

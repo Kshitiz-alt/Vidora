@@ -2,14 +2,14 @@ import { auth } from "@/libraries/authen"
 import { headers } from "next/headers"
 import { NextRequest, NextResponse } from "next/server"
 
-export async function middleware(request: NextRequest , response: NextResponse) {
+export async function middleware(request:NextRequest ,response:NextResponse) {
     const session = await  auth.api.getSession({
         headers: await headers()
     })
     if(!session){
         return NextResponse.redirect(new URL('/sign-in',request.url))
     }
-    return NextResponse.next()
+    return NextResponse.next(response)
     
 }
 
